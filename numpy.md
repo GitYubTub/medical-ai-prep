@@ -1,4 +1,4 @@
-# 🧠 Deep Learning with PyTorch for Medical Image Analysis  
+# Deep Learning with PyTorch for Medical Image Analysis  
 ### Student Notes & Foundations
 
 These notes document my understanding of core concepts needed for **medical image analysis using deep learning**, based on coursework and independent study.  
@@ -6,7 +6,7 @@ Written from a **learner’s perspective**, focusing on intuition and practical 
 
 ---
 
-## 📦 Section 2: Crash Course — NumPy
+## Section 2: Crash Course — NumPy
 
 ### What is NumPy?
 - Python library for **numerical computing**
@@ -24,3 +24,4 @@ Written from a **learner’s perspective**, focusing on intuition and practical 
 - Indexing & slicing:
   ```python
   image[20:100, 30:120]
+  image = image / 255.0
