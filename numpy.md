@@ -21,7 +21,5 @@ Written from a **learner’s perspective**, focusing on intuition and practical 
 ### Core Concepts
 - Arrays: `np.array()`, `np.zeros()`, `np.ones()`
 - Shape & dimensions: `.shape`, `.ndim`
-- Indexing & slicing:
-  ```python
-  image[20:100, 30:120]
-  image = image / 255.0
+- Indexing & slicing: `image[20:100, 30:120]`
+  
