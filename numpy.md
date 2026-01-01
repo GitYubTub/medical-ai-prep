@@ -22,4 +22,3 @@ Written from a **learner’s perspective**, focusing on intuition and practical 
 - Arrays: `np.array()`, `np.zeros()`, `np.ones()`
 - Shape & dimensions: `.shape`, `.ndim`
 - Indexing & slicing: `image[20:100, 30:120]`
-  
