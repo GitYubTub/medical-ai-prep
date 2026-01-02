@@ -1,4 +1,4 @@
-## CNN: Convolutional Neural Networks
+## Section 5: CNN Convolutional Neural Networks
 
 ### CNNs
 - Regular neural nets ignore spatial structure
