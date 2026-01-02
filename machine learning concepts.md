@@ -20,3 +20,16 @@
 3. Loss calculation
 4. Backpropagation
 5. Update weights
+
+### Common Problems
+- Overfitting: memorizes training data
+- Underfitting: too simple to learn patterns
+
+### Metrics
+- Accuracy (not always enough)
+- Precision / Recall
+- Sensitivity / Specificity
+- Dice score (segmentation)
+
+### Key Takeaway
+In medicine, false negatives matter more than accuracy.
