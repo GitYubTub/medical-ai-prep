@@ -30,8 +30,11 @@
 
 ### Training Loop (Simplified)
 ```python
-`for` epoch:
-    forward `pass`
+for epoch:
+    forward pass
     compute loss
-    backward `pass`
+    backward pass
     optimizer step
+```
+### Key Takeaway
+PyTorch turns math and gradients into learnable systems.
