@@ -30,8 +30,8 @@
 
 ### Training Loop (Simplified)
 ```python
-for epoch:
-    forward pass
+`for` epoch:
+    forward `pass`
     compute loss
-    backward pass
+    backward `pass`
     optimizer step
