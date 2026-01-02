@@ -27,3 +27,11 @@
 - Optimizers:
   - Adam
   - SGD
+
+### Training Loop (Simplified)
+```python
+for epoch:
+    forward pass
+    compute loss
+    backward pass
+    optimizer step
