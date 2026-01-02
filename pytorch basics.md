@@ -1,21 +1,21 @@
-##Section 4: PyTorch Basics
+## Section 4: PyTorch Basics
 
-###PyTorch
+### PyTorch
 - Deep learning framework
 - Dynamic computation graphs
 - GPU acceleration
 
-###Core Objects
+### Core Objects
 - Tensor: PyTorch version of NumPy array
 - torch.tensor()
 - .to(device) → CPU / GPU
 
-###Autograd
+### Autograd
 - Automatically computes gradients
 - Used for backpropagation
 - Enabled by default
 
-###Model Building Blocks
+### Model Building Blocks
 - torch.nn.Module
 - Layers:
   - nn.Linear
