@@ -5,3 +5,18 @@
 - In medical imaging:
   - Input: image
   - Output: diagnosis, class, or mask
+
+### Core Terms
+- Features: pixel values or learned patterns
+- Labels: ground truth (disease / no disease)
+- Model: function mapping input to output
+
+### Training Workflow
+1. Split data:
+   - Training set
+   - Validation set
+   - Test set
+2. Forward pass to prediction
+3. Loss calculation
+4. Backpropagation
+5. Update weights
