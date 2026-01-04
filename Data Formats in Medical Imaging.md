@@ -26,5 +26,13 @@
   - Convert to NumPy / PyTorch tensors
 
 ### Typical Pipeline
-nginx
+```nginx
+DICOM / NIfTI
+- NumPy
+- PyTorch Tensor
+- Model
+```
+
+### Key Takeaway
+Understanding formats = controlling the data, not guessing.
  
