@@ -1,6 +1,6 @@
-## Section 2: Crash Course — NumPy
+## Section 2: NumPy
 
-### What is NumPy?
+### NumPy
 - Python library for **numerical computing**
 - Optimized for fast operations on arrays
 - Foundation for **PyTorch tensors**
