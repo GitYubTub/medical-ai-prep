@@ -18,10 +18,7 @@ print(df.columns)
 
 
 # 2) Choose target column
-# --------------------------
 # Build features (numeric + categorical)
-# --------------------------
-
 TARGET_COL = "CRC_Risk"
 y = df[TARGET_COL]
 
@@ -32,10 +29,8 @@ X_numeric = df.select_dtypes(include=["number"]).drop(
 
 # Categorical features (these are NOT real text)
 cat_cols = ["Gender", "Lifestyle", "Family_History_CRC", "Pre-existing Conditions"]
-
 from sklearn.preprocessing import OneHotEncoder
 encoder = OneHotEncoder(handle_unknown="ignore", sparse_output=False)
-
 X_cat = encoder.fit_transform(df[cat_cols])
 
 # Combine numeric + categorical
@@ -69,7 +64,6 @@ model = RandomForestClassifier(
     class_weight={0: 1, 1: 2},  # CRC is rarer, so weight it higher
     random_state=42
 )
-
 model.fit(X_train_bal, y_train_bal)
 
 
@@ -79,6 +73,7 @@ y_prob = model.predict_proba(X_test)[:, 1]
 # Apply decision threshold
 threshold = 0.6
 y_pred = (y_prob >= threshold).astype(int)
+
 
 # 8) Evaluate like the paper
 acc = accuracy_score(y_test, y_pred)
@@ -107,3 +102,4 @@ print(f"\nAccuracy:     {acc:.4f}")
 print(f"F1-score:     {f1:.4f}")
 print(f"Sensitivity:  {sensitivity:.4f}")
 print(f"Specificity:  {specificity:.4f}")
+
