@@ -64,9 +64,25 @@
 
 
 
+## Adherence to a Diet with Higher Protein Quality Reduces the Risk of Colorectal Cancer
 
+### Main goal
+- Study how protein quality, not just quantity, affects CRC risk.
 
+### Key ideas
+- Introduces the Healthy Plate Protein Quality Index (HPPQI).
+- High-quality protein sources:
+  - Seafood
+  - Poultry
+  - Pulses
+  - Nuts
+- Low-quality protein sources:
+  - Red and processed meats
+  - Cheese
+  - Uses a large U.S. population cohort.
 
-
-
-
+### Important takeaway
+- Higher protein quality is associated with:
+  - Lower CRC incidence
+  - Lower CRC mortality
+- Provides strong epidemiological support for diet-based interventions.
