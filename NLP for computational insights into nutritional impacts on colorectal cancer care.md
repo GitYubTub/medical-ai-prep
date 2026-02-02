@@ -66,21 +66,6 @@ The study emphasizes medical-appropriate evaluation metrics, including:
 - Specificity – ability to correctly identify non-CRC cases
 - F1-score – balances precision and recall under class imbalance
 
-## 9. Replication Plan (Next Steps)
-
-To replicate the methodology step by step, the following plan will be used:
-
-1. Recreate the **NLP preprocessing pipeline** on dietary text
-2. Implement a simplified version of **diet-text → structured feature extraction**
-3. Fuse text-derived features with numeric lifestyle variables
-4. Compare **no resampling vs oversampling vs SMOTE**
-5. Use **k-fold cross-validation** to evaluate robustness
-6. Report results using:
-   - Confusion matrices
-   - Sensitivity
-   - Specificity
-   - F1-score
-
 ## Key Machine Learning Concepts Involved
 - Structured vs unstructured data  
 - Feature engineering  
@@ -89,9 +74,4 @@ To replicate the methodology step by step, the following plan will be used:
 - Overfitting  
 - Cross-validation  
 - Sensitivity, specificity, precision, recall, F1-score  
-
-
-## Goal
-
-The ultimate goal is to understand **how NLP-derived dietary features and structured clinical data can be combined** to improve CRC risk prediction, while carefully managing imbalance, overfitting, and robustness.
 
