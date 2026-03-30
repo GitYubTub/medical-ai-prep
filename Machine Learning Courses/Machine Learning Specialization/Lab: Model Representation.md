@@ -210,8 +210,6 @@ plt.show()
 ```
 
 
-![png](output_23_0.png)
-
 
 As you can see, setting $w = 100$ and $b = 100$ does *not* result in a line that fits our data. 
 
