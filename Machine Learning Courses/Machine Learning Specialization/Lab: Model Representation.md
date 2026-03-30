@@ -1,9 +1,5 @@
 # Optional Lab: Model Representation
 
-<figure>
- <img src="./images/C1_W1_L3_S1_Lecture_b.png"   style="width:600px;height:200px;">
-</figure>
-
 ## Goals
 In this lab you will:
 - Learn to implement the model $f_{w,b}$ for linear regression with one variable
