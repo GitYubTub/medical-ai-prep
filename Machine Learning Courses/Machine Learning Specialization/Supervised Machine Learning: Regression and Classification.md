@@ -6,7 +6,7 @@
 ### Two types of Machine Learning
 - Supervised learning
 - Unsupervised learning
-- 
+  
 ### Supervised learning
 - involves algorithms that learn mappings from input (x) to output (y) by training on examples with known correct answers (labels)
 - The goal is to systematically choose the best model to predict prices accurately
