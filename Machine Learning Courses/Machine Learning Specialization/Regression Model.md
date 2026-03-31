@@ -18,4 +18,5 @@
 ### Cost Function
 - J(w,b) = $\frac{1}{2m} \Sigma_{i=1}^{m} (\hat{y} - y)$
 - Goal: minimize J(w,b)
-- 
+- Note to self: 'i' is the "ith" training example not the x value.
+  
