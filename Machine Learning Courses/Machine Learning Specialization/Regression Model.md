@@ -15,3 +15,7 @@
 - fits a straight line to data points to predict continuous numerical values, such as house prices
 - The function f can be represented as a linear function: f_w,b(x) = wx + b, where w and b are parameters that determine the prediction.
 
+### Cost Function
+- J(w,b) = $\frac{1}{2m} \Sigma_{i=1}^{m} (\hat{y} - y)$
+- Goal: minimize J(w,b)
+- 
