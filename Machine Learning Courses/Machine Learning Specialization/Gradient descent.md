@@ -25,5 +25,4 @@
   - tmp_b = b - $\alpha$ $\frac{d}{db}$ J(w,b)
   - w = tmp_w
   - b = tmp_b
-- w as example:
-  - 
+- $\frac{d}{dw}$ J(w,b) = $\frac{1}{m} \Sigma_{i=1}^{m} (f_w,b(x^{(i)}) - y^{(i)})x^{(i)}$ 
