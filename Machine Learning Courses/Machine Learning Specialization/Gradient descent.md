@@ -29,3 +29,6 @@
 - $\frac{d}{dw}$ J(w,b) = $\frac{1}{m} \Sigma_{i=1}^{m} (f_w,b(x^{(i)}) - y^{(i)})$
   - w = w - $\alpha$ $\frac{1}{m} \Sigma_{i=1}^{m} (f_w,b(x^{(i)}) - y^{(i)})x^{(i)}$
   - b = b - $\alpha$ $\frac{1}{m} \Sigma_{i=1}^{m} (f_w,b(x^{(i)}) - y^{(i)})$
+    
+- Note one gradient descent intuition:
+<img width="679" height="347" alt="image" src="https://github.com/user-attachments/assets/1a00d7f9-4495-4320-83fa-ff9f7a32e7e2" />
