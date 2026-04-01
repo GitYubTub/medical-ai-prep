@@ -32,6 +32,11 @@ Vectorization
 - $$b = b - \alpha \frac{d}{db_j} J(\vec{w},b)$$
   - $$b = b - \alpha \frac{1}{m} \Sigma_{i=1}^{m} (f_{\vec{w},b}(\vec{x}^{(i)}) - y^{(i)})
 
+### Normal Equation Method
+- An alternative to gradient descent for linear regression is the normal equation, which solves for w and b directly using linear algebra without iterations
+- This method is not generalizable to other algorithms like logistic regression or neural networks and can be slow for large feature sets, but some libraries may use it internally
+
+
   
     
 
