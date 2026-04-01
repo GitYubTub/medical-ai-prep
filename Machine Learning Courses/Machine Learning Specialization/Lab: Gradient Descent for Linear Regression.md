@@ -225,7 +225,6 @@ plt.show()
 ```
 
 
-![png](output_22_0.png)
 
 
 ### Predictions
@@ -254,7 +253,6 @@ plt_contour_wgrad(x_train, y_train, p_hist, ax)
 ```
 
 
-![png](output_26_0.png)
 
 
 Above, the contour plot shows the $cost(w,b)$ over a range of $w$ and $b$. Cost levels are represented by the rings. Overlayed, using red arrows, is the path of gradient descent. Here are some things to note:
@@ -270,8 +268,6 @@ plt_contour_wgrad(x_train, y_train, p_hist, ax, w_range=[180, 220, 0.5], b_range
             contours=[1,5,10,20],resolution=0.5)
 ```
 
-
-![png](output_29_0.png)
 
 
 <a name="toc_40291_2.7.1"></a>
@@ -316,7 +312,6 @@ plt.show()
 ```
 
 
-![png](output_33_0.png)
 
 
 Above, the left graph shows $w$'s progression over the first few steps of gradient descent. $w$ oscillates from positive to negative and cost grows rapidly. Gradient Descent is operating on both $w$ and $b$ simultaneously, so one needs the 3-D plot on the right for the complete picture.
