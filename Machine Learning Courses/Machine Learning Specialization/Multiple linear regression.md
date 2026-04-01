@@ -28,6 +28,7 @@ Vectorization
 
 ### Gradient descent
 - $$w_j = w_j - \alpha \frac{d}{dw_j} J(\vec{w},b)$$
+  - $$w_j = w_j - \alpha \frac{1}{m} \Sigma_{i=1}^{m} $$
 - $$b = b - \alpha \frac{d}{db_j} J(\vec{w},b)$$
 
   
