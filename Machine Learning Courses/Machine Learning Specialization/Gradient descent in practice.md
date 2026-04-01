@@ -19,4 +19,7 @@
 - Feature scaling generally helps gradient descent converge faster and is recommended when in doubt
 
 ### Checking gradient descent for convergence
-- 
+- If gradient descent is working well, the cost J should go down after every iteration
+- If the cost J ever goes up, it might mean the learning rate (Alpha) is too high or there is a bug
+- When the cost J stops decreasing much and the curve flattens, gradient descent has likely converged
+- Automatic convergence test:  use a small threshold (epsilon) to automatically decide when the decrease in cost is small enough to stop
