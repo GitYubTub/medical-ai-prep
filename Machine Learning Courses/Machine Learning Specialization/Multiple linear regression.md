@@ -26,6 +26,8 @@ Vectorization
 - Vectorized code uses operations like the dot product to compute results in a single line
 - It runs much faster by utilizing parallel hardware such as CPUs and GPUs, making it practical for large datasets
 
+### Gradient descent
+- $$w_j = w_j - \alpha \fraction{1/3}$$
 
   
     
