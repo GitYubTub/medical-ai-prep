@@ -30,7 +30,7 @@ Vectorization
 - $$w_j = w_j - \alpha \frac{d}{dw_j} J(\vec{w},b)$$
   - $$w_n = w_n - \alpha \frac{1}{m} \Sigma_{i=1}^{m} (f_{\vec{w},b}(\vec{x}^{(i)}) - y^{(i)})x_n^{(i)} $$
 - $$b = b - \alpha \frac{d}{db_j} J(\vec{w},b)$$
-  - $$b = b - \alpha \frac{1}{m} \Sigma_{i=1}^{m} (f_{\vec{w},b}(\vec{x}^{(i)}) - y^{(i)})
+  - $$b = b - \alpha \frac{1}{m} \Sigma_{i=1}^{m} (f_{\vec{w},b}(\vec{x}^{(i)}) - y^{(i)})$$
 
 ### Normal Equation Method
 - An alternative to gradient descent for linear regression is the normal equation, which solves for w and b directly using linear algebra without iterations
