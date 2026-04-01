@@ -8,4 +8,17 @@
   - $\vec{w}$ = $$[w_1, w_2, w_3 ... w_n]$$
   - b is a number
   - $\vec{x}$ = $$[x_1, x_2, x_3 ... x_n]$$
+- $$f_{\vec{w},b}(\vec{x}) = \Sigma_{j=1}^{n} w_jx_j + b$$
+  - In Python:
+  ```python
+  f = 0
+  for j in range(n):
+    f = f + w[j] * x[j]
+  f = f + b
 - $$f_{\vec{w},b}(\vec{x}) = \vec{w} \cdot \vec{x} + b = w_1X_1 + w_2X_2 + ... + w_nX_n + b$$
+  - In Python:
+  ```python
+  f = np.dot(w, x) + b
+
+    
+
