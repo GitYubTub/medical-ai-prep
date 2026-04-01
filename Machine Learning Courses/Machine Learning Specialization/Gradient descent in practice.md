@@ -23,3 +23,8 @@
 - If the cost J ever goes up, it might mean the learning rate (Alpha) is too high or there is a bug
 - When the cost J stops decreasing much and the curve flattens, gradient descent has likely converged
 - Automatic convergence test:  use a small threshold (epsilon) to automatically decide when the decrease in cost is small enough to stop
+
+### Learning rate
+- Start with a small learning rate and verify that the cost decreases every iteration to debug the implementation
+- Experiment with a range of learning rates, increasing roughly threefold each time, to find the largest learning rate that still leads to consistent cost reduction
+- This approach balances training speed and stability for effective gradient descent
