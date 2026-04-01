@@ -28,3 +28,12 @@
 - Start with a small learning rate and verify that the cost decreases every iteration to debug the implementation
 - Experiment with a range of learning rates, increasing roughly threefold each time, to find the largest learning rate that still leads to consistent cost reduction
 - This approach balances training speed and stability for effective gradient descent
+
+### Feature engineering
+- Feature engineering involves creating new features from existing ones using domain knowledge or intuition to help the learning algorithm make better predictions
+- It is a critical step in many practical applications to enhance model accuracy
+
+### Polynomial regression
+- Creating polynomial features involves raising the original feature to various powers, which can result in features with vastly different value ranges
+- Feature scaling is important when using gradient descent to ensure all features have comparable ranges, improving model training stability
+- Besides powers, other transformations like the square root of a feature can be used to model data more appropriately
