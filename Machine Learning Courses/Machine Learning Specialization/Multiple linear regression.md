@@ -27,7 +27,8 @@ Vectorization
 - It runs much faster by utilizing parallel hardware such as CPUs and GPUs, making it practical for large datasets
 
 ### Gradient descent
-- $$w_j = w_j - \alpha \fraction{1/3}$$
+- $$w_j = w_j - \alpha \frac{d}{dw_j} J(\vec{w},b)$$
+- $$b = b - \alpha \frac{d}{db_j} J(\vec{w},b)$$
 
   
     
