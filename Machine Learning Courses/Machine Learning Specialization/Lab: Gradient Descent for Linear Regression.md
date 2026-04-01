@@ -1,9 +1,5 @@
 # Optional Lab: Gradient Descent for Linear Regression
 
-<figure>
-    <center> <img src="./images/C1_W1_L4_S1_Lecture_GD.png"  style="width:800px;height:200px;" ></center>
-</figure>
-
 ## Goals
 In this lab, you will:
 - automate the process of optimizing $w$ and $b$ using gradient descent.
@@ -60,32 +56,6 @@ def compute_cost(x, y, w, b):
 
     return total_cost
 ```
-
-<a name="toc_40291_2.1"></a>
-## Gradient descent summary
-So far in this course, you have developed a linear model that predicts $f_{w,b}(x^{(i)})$:
-$$f_{w,b}(x^{(i)}) = wx^{(i)} + b \tag{1}$$
-In linear regression, you utilize input training data to fit the parameters $w$,$b$ by minimizing a measure of the error between our predictions $f_{w,b}(x^{(i)})$ and the actual data $y^{(i)}$. The measure is called the $cost$, $J(w,b)$. In training you measure the cost over all of our training samples $x^{(i)},y^{(i)}$
-$$J(w,b) = \frac{1}{2m} \sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) - y^{(i)})^2\tag{2}$$ 
-
-
-In lecture, *gradient descent* was described as:
-
-$$\begin{align*} \text{repeat}&\text{ until convergence:} \; \lbrace \newline
-\;  w &= w -  \alpha \frac{\partial J(w,b)}{\partial w} \tag{3}  \; \newline 
- b &= b -  \alpha \frac{\partial J(w,b)}{\partial b}  \newline \rbrace
-\end{align*}$$
-where, parameters $w$, $b$ are updated simultaneously.  
-The gradient is defined as:
-$$
-\begin{align}
-\frac{\partial J(w,b)}{\partial w}  &= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) - y^{(i)})x^{(i)} \tag{4}\\
-  \frac{\partial J(w,b)}{\partial b}  &= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) - y^{(i)}) \tag{5}\\
-\end{align}
-$$
-
-Here *simultaniously* means that you calculate the partial derivatives for all the parameters before updating any of the parameters.
-
 <a name="toc_40291_2.2"></a>
 ## Implement Gradient Descent
 You will implement gradient descent algorithm for one feature. You will need three functions. 
@@ -136,7 +106,7 @@ def compute_gradient(x, y, w, b):
 
 <br/>
 
-<img align="left" src="./images/C1_W1_Lab03_lecture_slopes.PNG"   style="width:340px;" > The lectures described how gradient descent utilizes the partial derivative of the cost with respect to a parameter at a point to update that parameter.   
+The lectures described how gradient descent utilizes the partial derivative of the cost with respect to a parameter at a point to update that parameter.   
 Let's use our `compute_gradient` function to find and plot some partial derivatives of our cost function relative to one of the parameters, $w_0$.
 
 
@@ -145,9 +115,6 @@ Let's use our `compute_gradient` function to find and plot some partial derivati
 plt_gradients(x_train,y_train, compute_cost, compute_gradient)
 plt.show()
 ```
-
-
-![png](output_15_0.png)
 
 
 Above, the left plot shows $\frac{\partial J(w,b)}{\partial w}$ or the slope of the cost curve relative to $w$ at three points. On the right side of the plot, the derivative is positive, while on the left it is negative. Due to the 'bowl shape', the derivatives will always lead gradient descent toward the bottom where the gradient is zero.
@@ -236,7 +203,6 @@ print(f"(w,b) found by gradient descent: ({w_final:8.4f},{b_final:8.4f})")
     (w,b) found by gradient descent: (199.9929,100.0116)
 
 
-<img align="left" src="./images/C1_W1_Lab03_lecture_learningrate.PNG"  style="width:340px; padding: 15px; " > 
 Take a moment and note some characteristics of the gradient descent process printed above.  
 
 - The cost starts large and rapidly declines as described in the slide from the lecture.
@@ -311,9 +277,6 @@ plt_contour_wgrad(x_train, y_train, p_hist, ax, w_range=[180, 220, 0.5], b_range
 <a name="toc_40291_2.7.1"></a>
 ### Increased Learning Rate
 
-<figure>
- <img align="left", src="./images/C1_W1_Lab03_alpha_too_big.PNG"   style="width:340px;height:240px;" >
-</figure>
 In the lecture, there was a discussion related to the proper value of the learning rate, $\alpha$ in equation(3). The larger $\alpha$ is, the faster gradient descent will converge to a solution. But, if it is too large, gradient descent will diverge. Above you have an example of a solution which converges nicely.
 
 Let's try increasing the value of  $\alpha$ and see what happens:
