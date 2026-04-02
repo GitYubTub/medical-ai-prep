@@ -134,7 +134,8 @@ Before starting to implement any learning algorithm, it is always good to visual
 - The code below displays the data on a 2D plot (as shown below), where the axes are the two exam scores, and the positive and negative examples are shown with different markers.
 - We use a helper function in the ``utils.py`` file to generate this plot. 
 
-<img src="images/figure 1.png" width="450" height="450">
+<img width="423" height="349" alt="image" src="https://github.com/user-attachments/assets/072ba94a-dcd9-422b-80d2-afd44cde7bf3" />
+
 
 
 
