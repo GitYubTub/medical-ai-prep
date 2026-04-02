@@ -15,7 +15,7 @@ plt.style.use('./deeplearning.mplstyle')
 ```
 
 ## Sigmoid or Logistic Function
-<img align="left" src="./images/C1_W3_LogisticRegression_left.png"     style=" width:300px; padding: 10px; " >As discussed in the lecture videos, for a classification task, we can start by using our linear regression model, $f_{\mathbf{w},b}(\mathbf{x}^{(i)}) = \mathbf{w} \cdot  \mathbf{x}^{(i)} + b$, to predict $y$ given $x$. 
+As discussed in the lecture videos, for a classification task, we can start by using our linear regression model, $f_{\mathbf{w},b}(\mathbf{x}^{(i)}) = \mathbf{w} \cdot  \mathbf{x}^{(i)} + b$, to predict $y$ given $x$. 
 - However, we would like the predictions of our classification model to be between 0 and 1 since our output variable $y$ is either 0 or 1. 
 - This can be accomplished by using a "sigmoid function" which maps all input values to values between 0 and 1. 
 
