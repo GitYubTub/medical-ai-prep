@@ -39,5 +39,6 @@
 - $$L(f_{\vec{w},b}(\vec{x}),y^{(i)})$$
   - $$-log(f_{\vec{w},b}(\vec{x}^{(i)})$$ if $$y^{(i)} = 1$$
   - $$-log(1 - f_{\vec{w},b}(\vec{x}^{(i)})$$ if $$y^{(i)} = 0$$
+- This loss function penalizes incorrect predictions more heavily and rewards predictions close to the true label, encouraging accurate probability estimates
 
   
