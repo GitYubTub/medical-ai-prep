@@ -28,6 +28,12 @@
     - z $\ge$ 0
     - $$\vec{w} \cdot \vec{x} + b \ge 0$$: $$\hat{y} = 1$$
     - $$\vec{w} \cdot \vec{x} + b < 0$$: $$\hat{y} = 0$$
+  - **Decision Boundary**
+    - The decision boundary is defined by the equation w·x + b = 0, where the model is neutral between classes
+    - For two features, this boundary is a line (e.g., x1 + x2 = 3) separating predicted classes
+  - **Complex Decision Boundaries**
+    - Using polynomial features (e.g., x1², x2²) allows logistic regression to create nonlinear decision boundaries like circles or ellipses
+    - Higher-order polynomial terms enable even more complex boundaries, allowing the model to fit intricate data patterns
 
 
   
