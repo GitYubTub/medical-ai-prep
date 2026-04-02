@@ -35,5 +35,9 @@
   - Using polynomial features (e.g., x1², x2²) allows logistic regression to create nonlinear decision boundaries like circles or ellipses
   - Higher-order polynomial terms enable even more complex boundaries, allowing the model to fit intricate data patterns
 
+### Logistic loss function
+- $$L(f_{\vec{w},b}(\vec{x}),y^{(i)})$$
+  - $$-log(f_{\vec{w},b}(\vec{x}^{(i)})$$ if $$y^{(i)} = 1$$
+  - $$-log(1 - f_{\vec{w},b}(\vec{x}^{(i)})$$ if $$y^{(i)} = 0$$
 
   
