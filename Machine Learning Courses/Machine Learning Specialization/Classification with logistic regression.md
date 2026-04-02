@@ -1,0 +1,16 @@
+## Classification with logistic regression
+
+### Classification
+- Classification predicts categories rather than continuous values, unlike linear regression
+- Binary classification involves two classes, often labeled as 0 or 1, false or true, negative or positive
+- Linear regression
+  - Linear regression outputs continuous values, which is not ideal for classification tasks
+  - Using a threshold (e.g., 0.5) to convert linear regression outputs to classes can lead to poor decision boundaries, especially when new data points are added
+    
+### Logistic Regression 
+- Logistic regression is used for binary classification, such as determining if a tumor is malignant (1) or benign (0)
+- Unlike linear regression, logistic regression fits an S-shaped curve (Sigmoid function) to predict probabilities between 0 and 1
+- **Sigmoid Function:**
+  - The Sigmoid function, g(z) = 1 / (1 + e^(-z)), maps any real-valued number into the range (0,1)
+  - It outputs values close to 0 for large negative inputs, close to 1 for large positive inputs, and 0.5 when the input is zero
+  - 
