@@ -15,6 +15,14 @@
   - It outputs values close to 0 for large negative inputs, close to 1 for large positive inputs, and 0.5 when the input is zero
   - $$z = \vec{w} \cdot \vec{x} + b$$ -> $$g(z) = \frac{1}{1+e^{-z}}$$
   - $$f_{\vec{w},b}(\vec{x}) = g(\vec{w} \cdot \vec{x} + b) = \frac{1}{1+e^{-(\vec{w} \cdot \vec{x} + b)}}$$
+  - Also can been written as $$P(y = 1|x;\vec{w},b)$$
 - The output probability can be interpreted as the likelihood of the positive class; for example, a 0.7 output means a 70% chance the tumor is malignant
 - Since y is binary, the probability of y=0 is 1 minus the probability of y=1
 - The model parameters w and b influence the probability calculation.
+- Predictions are made by setting a threshold (commonly 0.5); if f(x) ≥ 0.5, predict y = 1, otherwise y = 0
+  - If $$f_{\vec{w},b}(\vec{x}) \ge 0.5$$
+  - Yes: $$\hat{y} = 1$$
+  - No: $$\hat{y} = 0$$
+
+
+  
