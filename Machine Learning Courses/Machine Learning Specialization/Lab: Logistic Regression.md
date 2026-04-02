@@ -193,22 +193,3 @@ addpt = plt_one_addpt_onclick( x_train,y_train, w_in, b_in, logistic=True)
 ## Congratulations!
 You have explored the use of the sigmoid function in logistic regression.
 
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
