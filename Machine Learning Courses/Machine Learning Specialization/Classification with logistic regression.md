@@ -13,4 +13,8 @@
 - **Sigmoid Function:**
   - The Sigmoid function, g(z) = 1 / (1 + e^(-z)), maps any real-valued number into the range (0,1)
   - It outputs values close to 0 for large negative inputs, close to 1 for large positive inputs, and 0.5 when the input is zero
-  - 
+  - $$z = \vec{w} \cdot \vec{x} + b$$ -> $$g(z) = \frac{1}{1+e^{-z}}$$
+  - $$f_{\vec{w},b}(\vec{x}) = g(\vec{w} \cdot \vec{x} + b) = \frac{1}{1+e^{-(\vec{w} \cdot \vec{x} + b)}}$$
+- The output probability can be interpreted as the likelihood of the positive class; for example, a 0.7 output means a 70% chance the tumor is malignant
+- Since y is binary, the probability of y=0 is 1 minus the probability of y=1
+- The model parameters w and b influence the probability calculation.
