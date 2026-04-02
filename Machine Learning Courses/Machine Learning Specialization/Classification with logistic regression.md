@@ -21,8 +21,13 @@
 - The model parameters w and b influence the probability calculation.
 - Predictions are made by setting a threshold (commonly 0.5); if f(x) ≥ 0.5, predict y = 1, otherwise y = 0
   - If $$f_{\vec{w},b}(\vec{x}) \ge 0.5$$
-  - Yes: $$\hat{y} = 1$$
-  - No: $$\hat{y} = 0$$
+    - Yes: $$\hat{y} = 1$$
+    - No: $$\hat{y} = 0$$
+  - When is $$f_{\vec{w},b}(\vec{x}) \ge 0.5$$?
+    - g(z) $\ge$ 0.5
+    - z $\ge$ 0
+    - $$\vec{w} \cdot \vec{x} + b \ge 0$$: $$\hat{y} = 1$$
+    - $$\vec{w} \cdot \vec{x} + b < 0$$: $$\hat{y} = 0$$
 
 
   
