@@ -18,4 +18,7 @@ The ls command is basically used for viewing all list of files/directories. Ls c
 <img width="493" height="138" alt="image" src="https://github.com/user-attachments/assets/f37c447e-5099-409c-a387-8a7513e7bc17" />
 
 ### ls Command
--l is a
+Command + Option/Flag + Argument
+ls is a command, and -l is one of its options
+ls with -l option gives more information about each of the files listed in a specific directory
+For PowerShell just need ls (Powershell assumes -l is -LiteralPath, which needs a pat folder string after it)
