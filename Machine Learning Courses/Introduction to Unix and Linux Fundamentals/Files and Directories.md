@@ -40,6 +40,25 @@ From the image above, this is what each column means:
 - Column 4: Name (The Identity)
   - This is the literal name of the file or directory, including its file extension if it has one.
   - Folders will not have file extensions
+ 
+### LS Metacharacters
+In the Is listing example, every file line began with a d, -, or l. These characters indicate the type of file that's listed
+Only need d, -, and l for PowerShell
+- $-$ (Regular File): Your basic scripts (.py), data files (.csv), and text documents (.txt).
+- d (Directory): Folders used to structure the system tree.
+- l (Symbolic Link): A shortcut pointing directly to another file.
+  
+Metacharacters (Wildcards)
+These are special symbols that the shell intercepts and interprets as special commands made by the user rather than literal text.
+The two most common are the Asterisk (*) and the Question Mark (?).
+- The Asterisk (*): Matches Zero or More Characters
+  - Think of the asterisk as an "any fill-in-the-blank" card.
+  <img width="765" height="447" alt="image" src="https://github.com/user-attachments/assets/0feacc27-e864-4f1d-a5f7-05d4c9d16c24" />
+  
+- The Question mark (?): it represents exactly one character slot.
+  - Used to find matches with a single character.
+  <img width="674" height="430" alt="image" src="https://github.com/user-attachments/assets/1e456496-2f0a-4896-bb4b-022d95f1d373" />
+
 
 ## Side Note (LiteralPath)
 LiteralPath specifies the exact location of a file or folder.
@@ -52,7 +71,7 @@ The Path Parameter (Allows Wildcards)
 - If you type ls photo[1-3].png, it looks for photo1.png, photo2.png, and photo3.png.
 
 The LiteralPath Parameter (No Wildcards Allowed)
-The LiteralPath parameter tells PowerShell: "Do not try to be smart. Do not interpret any character as a search filter. Take the folder name exactly as I typed it, word-for-word."
+The LiteralPath parameter tells PowerShell, "Do not try to be smart. Do not interpret any character as a search filter. Take the folder name exactly as I typed it, word-for-word."
   
 Important when there are wildcard characters in the file name EX: "AI_Med_[2026]"
 
