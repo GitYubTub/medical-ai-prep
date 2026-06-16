@@ -41,3 +41,25 @@ From the image above, this is what each column means:
   - This is the literal name of the file or directory, including its file extension if it has one.
   - Folders will not have file extensions
 
+## Side Note (LiteralPath)
+LiteralPath specifies the exact location of a file or folder.
+The difference between LiteralPath and Path is how the terminal handles wildcard characters (like *, ?, or []).
+- The Standard Path Parameter allows wildcards
+- The LiteralPath Parameter does not allow wildcards
+
+The Path Parameter (Allows Wildcards)
+- If you type ls *.csv, it looks for anything ending in .csv.
+- If you type ls photo[1-3].png, it looks for photo1.png, photo2.png, and photo3.png.
+
+The LiteralPath Parameter (No Wildcards Allowed)
+The LiteralPath parameter tells PowerShell: "Do not try to be smart. Do not interpret any character as a search filter. Take the folder name exactly as I typed it, word-for-word."
+  
+Important when there are wildcard characters in the file name EX: "AI_Med_[2026]"
+
+
+
+
+
+
+
+
