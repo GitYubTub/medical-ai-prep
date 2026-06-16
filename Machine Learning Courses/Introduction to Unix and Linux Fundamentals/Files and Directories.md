@@ -22,5 +22,22 @@ Command + Option/Flag + Argument
 ls is a command, and -l is one of its options
 - ls with -l option gives more information about each of the files listed in a specific directory
 - For PowerShell, just need ls (PowerShell assumes -l is -LiteralPath, which needs a path folder string after it)
-From the image above 
+  
+From the image above, this is what each column means:
+- Column 1: Mode (The File Attributes)
+  - Position 1: If the very first letter is a d, the item is a folder (a branch). If it is a dash -, it is an ordinary file (a leaf).
+  - Position 2: If an "a" is there, it tells the user that the files are stored independently of their primary computer, and the file remains entirely safe if anything happens to this computer. (the files are in OneDrive, therefore, a is in the second position)
+  - Position 3: If an "r" is there, it means the file is locked. You can open it and look at it, but Windows will block you from editing or saving changes to it.
+  - Position 4: If an "h" is there, it means the file is normally invisible in your standard Windows File Explorer, though it still shows up when you force a list command in the terminal.
+  - Position 5: If an "s" is there, it means the file is a critical file that the Windows operating system needs to run properly.
+    
+- Column 2: LastWriteTime (The Timestamp): This column shows the exact date and time the folder or file was last written to or altered.
+ 
+- Column 3: Length (The File Size)
+  - This column tells you how much space the item occupies on your storage drive, measured in bytes
+  - Will not display for folders due to processing speed
+ 
+- Column 4: Name (The Identity)
+  - This is the literal name of the file or directory, including its file extension if it has one.
+  - Folders will not have file extensions
 
