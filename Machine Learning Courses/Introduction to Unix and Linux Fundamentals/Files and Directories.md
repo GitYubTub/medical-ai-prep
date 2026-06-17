@@ -72,6 +72,14 @@ Directories:
   - Can change to the parent directory by typing "cd .."
   - will work until there are no more directories above
 
+### Other LS Command Variants
+- Single Column Layout: output only the names as a bare, clean list of strings without any table headers or metadata columns
+  - "ls -Name"
+- Directory Information Only: just the structural folder nodes and skip all the individual files entirely
+  - "ls -Directory"
+- Sorting by Time: the most recently edited file appears at the very bottom line of the terminal window
+  - "ls | Sort-Object LastWriteTime"
+
 ## Side Note (LiteralPath)
 LiteralPath specifies the exact location of a file or folder.
 The difference between LiteralPath and Path is how the terminal handles wildcard characters (like *, ?, or []).
