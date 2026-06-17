@@ -66,13 +66,11 @@ The two most common are the Asterisk (*) and the Question Mark (?).
 
 <img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/d5f34051-9607-4be4-a965-4e188fe45071" /> <img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/81164024-b808-43b0-a046-d482fba44f20" />
 
-
-
 Directories:
-Single Dot (.): Represents the current directory
-Double Dot (..): Represents the parent directory (the folder directly above in the file system tree)
-- Can change to the parent directory by typing "cd .."
-- will work until there are no more directories above
+- Single Dot (.): Represents the current directory
+- Double Dot (..): Represents the parent directory (the folder directly above in the file system tree)
+  - Can change to the parent directory by typing "cd .."
+  - will work until there are no more directories above
 
 ## Side Note (LiteralPath)
 LiteralPath specifies the exact location of a file or folder.
