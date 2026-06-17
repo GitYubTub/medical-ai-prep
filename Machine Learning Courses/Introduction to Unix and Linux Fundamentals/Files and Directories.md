@@ -27,9 +27,9 @@ From the image above, this is what each column means:
 - Column 1: Mode (The File Attributes)
   - Position 1: If the very first letter is a d, the item is a folder (a branch). If it is a dash -, it is an ordinary file (a leaf).
   - Position 2: If an "a" is there, it tells the user that the files are stored independently of their primary computer, and the file remains entirely safe if anything happens to this computer. (the files are in OneDrive, therefore, a is in the second position)
-  - Position 3: If an "r" is there, it means the file is locked. You can open it and look at it, but Windows will block you from editing or saving changes to it.
-  - Position 4: If an "h" is there, it means the file is normally invisible in your standard Windows File Explorer, though it still shows up when you force a list command in the terminal.
-  - Position 5: If an "s" is there, it means the file is a critical file that the Windows operating system needs to run properly.
+  - Position 3: If a "r" is there, it means the file is locked. You can open it and look at it, but Windows will block you from editing or saving changes to it.
+  - Position 4: If a "h" is there, it means the file is normally invisible in your standard Windows File Explorer, though it still shows up when you force a list command in the terminal.
+  - Position 5: If a "s" is there, it means the file is a critical file that the Windows operating system needs to run properly.
     
 - Column 2: LastWriteTime (The Timestamp): This column shows the exact date and time the folder or file was last written to or altered.
  
@@ -59,6 +59,20 @@ The two most common are the Asterisk (*) and the Question Mark (?).
   - Used to find matches with a single character.
   <img width="674" height="430" alt="image" src="https://github.com/user-attachments/assets/1e456496-2f0a-4896-bb4b-022d95f1d373" />
 
+### Hidden Files
+- Hidden files will contain a "h" in position 4 of their mode column
+- They will not show when a normal ls command is run
+- revealed with "ls -force"
+
+<img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/d5f34051-9607-4be4-a965-4e188fe45071" /> <img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/81164024-b808-43b0-a046-d482fba44f20" />
+
+
+
+Directories:
+Single Dot (.): Represents the current directory
+Double Dot (..): Represents the parent directory (the folder directly above in the file system tree)
+- Can change to the parent directory by typing "cd .."
+- will work until there are no more directories above
 
 ## Side Note (LiteralPath)
 LiteralPath specifies the exact location of a file or folder.
