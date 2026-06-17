@@ -80,6 +80,13 @@ Directories:
 - Sorting by Time: the most recently edited file appears at the very bottom line of the terminal window
   - "ls | Sort-Object LastWriteTime"
 
+### Displaying Files Recursively
+In terminal file management, a recursive operation means that a command will not just look at the surface level of the directory you are standing in. It will dive deep into every subfolder, open those subfolders up, list everything inside them, and keep diving down until it has mapped out the entire underlying object-oriented map
+- The Direct Parameter
+  - "ls -Recurse" will flood your terminal screen with a complete, structured view of your current folder alongside every hidden sub-leaf inside it
+- The Deep-Filter Search
+  - ls -Recurse *something" PowerShell will instantly dig through every single branch of your directory tree to fish out that exact file path for you
+
 ## Side Note (LiteralPath)
 LiteralPath specifies the exact location of a file or folder.
 The difference between LiteralPath and Path is how the terminal handles wildcard characters (like *, ?, or []).
