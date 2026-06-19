@@ -9,7 +9,7 @@
 
 - Stacking Pre-Made Sub-Branches can be used to make a directory with a bunch of subfolders (EX: mkdir "ML_Project\Data", "ML_Project\Models", "ML_Project\Notebooks", "ML_Project\Plots")
 
-## TO Move and copy files and directories using PowerShell
+## To Move and copy files and directories using PowerShell
 - To move a file or directory, use the command: "mv" + name of file or directory path + destination
   - EX: mv "AI Med.txt" Files
   - EX: mv C:\Users\dell\Desktop\dataset.csv "C:\Users\dell\OneDrive - Tredyffrin Easttown School District\Documents\AI Med\Files"
