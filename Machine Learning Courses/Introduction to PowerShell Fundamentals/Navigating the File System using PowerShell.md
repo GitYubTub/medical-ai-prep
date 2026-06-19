@@ -35,3 +35,7 @@
   - stdout (Standard Output) — File Descriptor 1
   - stderr (Standard Error) — File Descriptor 2
   - can be used to filter reports
+
+### Removing Directories
+- To remove directories, use "rmdir" + name of the directory that will be removed
+- Removes everything, including subdirectories
