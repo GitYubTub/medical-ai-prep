@@ -87,6 +87,13 @@ In terminal file management, a recursive operation means that a command will not
 - The Deep-Filter Search
   - ls -Recurse *something" PowerShell will instantly dig through every single branch of your directory tree to fish out that exact file path for you
 
+## To make new files and directories using PowerShell
+- To create a folder in your current directory, use the command: "mkdir" + name of the directory you want to add
+  - Note: if the directory's name has spaces in it, must wrap the name in quotes (Ex: mkdir "My Machine Learning Project")
+- To create an entire pathway with directories and sub-directories, type:  "mkdir" + whole path layout (Ex: mkdir Project\Data\Raw_Images)
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/0da03f38-ad0b-457f-b0ee-0318ea29c52c" />
+
+
 ## Side Note (LiteralPath)
 LiteralPath specifies the exact location of a file or folder.
 The difference between LiteralPath and Path is how the terminal handles wildcard characters (like *, ?, or []).
