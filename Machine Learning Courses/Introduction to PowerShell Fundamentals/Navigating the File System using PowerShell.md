@@ -27,3 +27,7 @@
   - EX: Inside the "AI Med" folder, jumping to the "Files" folder inside the "AI Med" folder is a relative jump
   - Type "cd Files"
 - Type "pwd" to get the current directory branch
+
+### cd Navigation
+- "cd ~" instantly teleports you straight back to your root directory profile (C:\Users\dell)
+- 
