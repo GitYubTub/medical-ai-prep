@@ -1,4 +1,6 @@
-## To make new files and directories using PowerShell
+## Navigating the File System using PowerShell
+
+### To make new files and directories using PowerShell
 - To create a folder in your current directory, use the command: "mkdir" + name of the directory you want to add
   - Note: if the directory's name has spaces in it, must wrap the name in quotes (EX: mkdir "My Machine Learning Project")
 - To create an entire pathway with directories and sub-directories, type:  "mkdir" + whole path layout (EX: mkdir Project\Data\Raw_Images)
@@ -9,7 +11,7 @@
 
 - Stacking Pre-Made Sub-Branches can be used to make a directory with a bunch of subfolders (EX: mkdir "ML_Project\Data", "ML_Project\Models", "ML_Project\Notebooks", "ML_Project\Plots")
 
-## To Move and copy files using PowerShell
+### To Move and copy files using PowerShell
 - To move a file, use the command: "mv" + name of file or directory path + destination
   - EX: mv "AI Med.txt" Files
   - EX: mv C:\Users\dell\Desktop\dataset.csv "C:\Users\dell\OneDrive - Tredyffrin Easttown School District\Documents\AI Med\Files"
