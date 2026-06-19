@@ -28,6 +28,10 @@
   - Type "cd Files"
 - Type "pwd" to get the current directory branch
 
-### cd Navigation
+### cd Navigation + The Three Standard Streams
 - "cd ~" instantly teleports you straight back to your root directory profile (C:\Users\dell)
-- 
+- Three Standard Streams
+  - stdin (Standard Input) — File Descriptor 0
+  - stdout (Standard Output) — File Descriptor 1
+  - stderr (Standard Error) — File Descriptor 2
+  - can be used to filter reports
