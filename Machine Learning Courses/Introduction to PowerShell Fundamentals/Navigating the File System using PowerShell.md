@@ -20,3 +20,10 @@
 - To copy a file, use the command: "cp" +  name of file or directory path + destination
   - EX: cp "AI Med.txt" Files
 
+### Absolute Relative Path Names
+- Absolute Paths: give a complete address starting at the absolute beginning of a directory path
+  - EX: C:\Users\dell\OneDrive...\Documents\AI Med (Starts with C:\)
+- Relative Paths: Give directional paths based entirely on the current address
+  - EX: Inside the "AI Med" folder, jumping to the "Files" folder inside the "AI Med" folder is a relative jump
+  - Type "cd Files"
+- Type "pwd" to get the current directory branch
