@@ -18,3 +18,6 @@
   - It's stated in the video that a neural network can also decide the features of each layer after the input layer to give the best prediction
   - How can the neuron network decide which features to combine from the previous layer to output better features?
     - In the video used t-shirts as an example. How would the neuron network be able to decide a better feature was to combine price and shipping cost to create affordability?
+   
+### Example: Recognizing Images
+
