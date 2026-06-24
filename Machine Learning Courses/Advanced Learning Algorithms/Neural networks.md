@@ -24,3 +24,4 @@
 - The second hidden layer then uses the features from the first hidden layer to zoom out and look for contrast in a bigger pixel window (human features on plain skin)
 - The third hidden layer then uses the features from the second hidden layer to zoom out more and look for a whole face
 - The neuron is able to do this using data and can completely train itself without a human to tell it what to look for
+<img width="996" height="385" alt="image" src="https://github.com/user-attachments/assets/29bc97e6-bb8b-4397-a5b4-475427b495f1" />
