@@ -10,3 +10,7 @@
 - The sigmoid function of a neuron in one layer will use the output from the last layer as input, which, when written out, will have the superscript of the previous layer
 - The neurons in each layer will have subscripts of numbers starting with the top neuron at one and ending at however many neurons there are
 EX: Activation value of layer l, unit(neuron) j: $\text{a}_{j}^{[l]} = g(\vec{w} _{j}^{[l]} \cdot \vec{a} ^{[l-1]} + b _{j}^{[l]})$
+
+### Inference: making predictions (forward propagation)
+- Forward propagation is just the process of data going from the input layer and moving past all the hidden layers, outputting a value at the output layer
+  - all the outputs of a layer are then put into a vector and plugged into the next layer
