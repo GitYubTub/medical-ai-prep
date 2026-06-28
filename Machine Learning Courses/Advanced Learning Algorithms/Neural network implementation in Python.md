@@ -37,3 +37,7 @@ Note: g is not shown but is the $$1/(1-e^z)$$ part
   - return the final activation
 <img width="292" height="196" alt="image" src="https://github.com/user-attachments/assets/69328d8a-6105-40ce-8361-fea90a09ade1" />
 
+### Vectorization
+<img width="854" height="194" alt="image" src="https://github.com/user-attachments/assets/f6881d06-3ee2-4115-872b-6b1d2d19572b" />
+
+
