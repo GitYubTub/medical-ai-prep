@@ -26,4 +26,4 @@
 
 - Hidden layer
   - ReLU is better than Sigmoid because ReLU only requires a simple maximum operation, but Sigmoid requires expensive operations which takes exptra processing time
-  - ReLU is only flat in one place as opposed to Sigmoid's one. Allows for better, faster gradient desent
+  - ReLU is only flat in one place as opposed to Sigmoid's one. Allows for better, faster gradient descent
