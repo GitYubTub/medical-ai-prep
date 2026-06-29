@@ -16,3 +16,14 @@
 3. Linear Activation Function (no activation function)
    - Output Range: $-\infty$ to $\infty$
    - Best when predicting a continuous numerical value that can be positive or negative
+
+### Choosing activation functions
+- Output layer
+  - Sigmoid: Binary Classification (0 or 1)
+  - Linear Regression: Any real number (Positive or Negative)
+  - ReLU: Non-negative numbers only
+<img width="937" height="273" alt="image" src="https://github.com/user-attachments/assets/ed67423d-2a09-4665-a486-7e104634d52c" />
+
+- Hidden layer
+  - ReLU is better than Sigmoid because ReLU only requires a simple maximum operation, but Sigmoid requires expensive operations which takes exptra processing time
+  - ReLU is only flat in one place as opposed to Sigmoid's one. Allows for better, faster gradient desent
