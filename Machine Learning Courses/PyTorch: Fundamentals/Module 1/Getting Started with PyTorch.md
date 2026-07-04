@@ -48,7 +48,7 @@
 <img width="740" height="101" alt="image" src="https://github.com/user-attachments/assets/e30e518a-da1d-4be8-a3a9-e7126df08b9b" />
 
 - torch.no_grad() tells PyTorch it's no longer training
-- Trys to let the model predict data it has never seen before after it's training
+- Tries to let the model predict data it has never seen before after its training
 
 ### Activation functions
 - Q: How do more neurons capture more complexity?
@@ -59,5 +59,22 @@
   - Q: What if there were multiple hidden layers?
   - A: I originally thought that we don't write code for hidden layers, but instead we don't write code for the input layer
 
+### Tensors
+- .shape gives batch size(number of samples) first, then number of features per sample
+  - In your model, if it takes only one input, you would get an error if there is more than one feature per sample
+- .float() converts any tensors into 32bit float data types
+  - now can mix floats and integers for outputs of floats
+- can convert arrays from numpy to tensors using ".from_numpy(numpy array)"
+- Quick data
+  - zeros = torch.zeros(3, 3): 3x3 tensor of zeros
+  - ones = torch.ones (2, 4): 2x4 tensor of ones
+  - random = torch.rand (5, 5): 5x5 tensor with random values
+- You always need a batch size for input data
+   - can use ".unsqueeze()" to add dimensions
+   - ".squeeze()" takes away dimensions
+- Indexing and slicing in TensorFlow work the same way as in Python
+  - .item() can be used to convert elements in tensors to a Python number
+    - It can only be used on singular elements
+  
 
   
