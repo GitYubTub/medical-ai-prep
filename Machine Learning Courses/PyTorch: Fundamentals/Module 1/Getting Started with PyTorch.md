@@ -50,6 +50,11 @@
 - torch.no_grad() tells PyTorch it's no longer training
 - Trys to let the model predict data it has never seen before after it's training
 
+### Activation functions
+- Q: How do more neurons capture more complexity?
+  - A: (AI) When you have multiple neurons, each with its own weight and bias, they activate (or "turn on") at different points, creating multiple bends. 
+- Q: Why is ReLU able to bend the curve even at non-zero points on the line?
+  - A: (help from AI) Since the input for ReLU is the output of a neuron before activation, for z = w*x + b, if z is negative, the ReLU of that z would output zero, creating a bend. The weights and biases can be changed to make z negative using the equation x = -b/w, which is the equation if z were zero.
 
 
   
