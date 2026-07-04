@@ -76,5 +76,9 @@
   - .item() can be used to convert elements in tensors to a Python number
     - It can only be used on singular elements
   
-
+### Tensor Math and Broadcasting
+- PyTorch applies operations element-wise on tensors, allowing efficient computation on multiple values simultaneously
+- Scalars can be automatically expanded to match tensor shapes, enabling operations like applying the same weight and bias across many inputs
+- Broadcasting allows tensors with different shapes to be combined by automatically expanding dimensions of size 1 to match the other tensor
+  - For example, a tensor shaped [1,1] can be broadcast to match a [1,3] tensor by repeating its values
   
