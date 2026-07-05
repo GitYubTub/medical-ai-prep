@@ -58,6 +58,8 @@
 - Note: In PyTorch, we only write code for the layers that compute
   - Q: What if there were multiple hidden layers?
   - A: I originally thought that we don't write code for hidden layers, but instead we don't write code for the input layer
+<img width="273" height="130" alt="image" src="https://github.com/user-attachments/assets/14ae3ae2-2de2-4330-8f97-90324075d2ed" />
+
 
 ### Tensors
 - .shape gives batch size(number of samples) first, then number of features per sample
