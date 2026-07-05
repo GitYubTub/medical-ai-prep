@@ -35,6 +35,8 @@
 
 - Loss function (MSELoss() is Mean Squared Error loss used for linear models): how wrong or how right the predictions are
 - Optimizer (SDG is Stochastic Gradient Descent, which is the gradient descent model used): improve the weights and biases based on the error of the loss function with a learning rate included
+
+- model, optimizer, loss_function = init_model needed before training the model
 <img width="507" height="258" alt="image" src="https://github.com/user-attachments/assets/bf423ed5-c910-4b4c-8a58-159026cbbc2c" />
 
 - Runs 500 epochs or runs the training loop 500 times
