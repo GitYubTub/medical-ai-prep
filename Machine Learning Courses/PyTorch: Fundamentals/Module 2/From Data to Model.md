@@ -35,4 +35,18 @@
 - model.eval() sets your model into evaluation mode
 <img width="700" height="250" alt="image" src="https://github.com/user-attachments/assets/94c466ba-3a77-47f2-a6b8-d580cd6418e0" />
 
+### Loss
+- "loss.backward()" back propagation determines which weights and biases contributed to the loss and need to be changed
+- "optimizer.step()" updates the weights based on the diagnostic on the backward step
+- Crossentropy loss: loss_function used for classification problems
+  - punishes more confident wrong answers
+- Mean Squared Error: a loss function that uses the squared difference between the real and predicted value to determin error
+  - Squard, so it's always positive
+  - punishes worse mistakes more than the smaller ones
+  - best when predicting continuous values
+- Loss Functions
+<img width="747" height="243" alt="image" src="https://github.com/user-attachments/assets/5e624902-9fdd-4574-870b-57a0d3925787" />
+
+    
+
   
