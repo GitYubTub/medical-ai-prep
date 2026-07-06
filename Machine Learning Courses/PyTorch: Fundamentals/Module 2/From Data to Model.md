@@ -26,5 +26,13 @@
   - Loads the data in batches with the batch_size
   - shuffle=True lets you train your dataset better by shuffling the training data 
 
+### Overview of the ML Pipeline with PyTorch - Part 2: Models
+- Making a model using nn.Module (similar to nn.Sequential)
+  - _init_ defines layers
+  - forward describes how the data flows through the layers
+- There is no need to write forward out when trying to run forward "output = model(data)"
+- "super()._init_()" creates a tracking system that tracks all the learnable parameters of the model (weights and biases)
+- model.eval() sets your model into evaluation mode
+<img width="700" height="250" alt="image" src="https://github.com/user-attachments/assets/94c466ba-3a77-47f2-a6b8-d580cd6418e0" />
 
-
+  
