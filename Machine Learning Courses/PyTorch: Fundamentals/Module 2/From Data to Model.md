@@ -40,13 +40,32 @@
 - "optimizer.step()" updates the weights based on the diagnostic on the backward step
 - Crossentropy loss: loss_function used for classification problems
   - punishes more confident wrong answers
-- Mean Squared Error: a loss function that uses the squared difference between the real and predicted value to determin error
+- Mean Squared Error: a loss function that uses the squared difference between the real and predicted value to determine error
   - Squard, so it's always positive
   - punishes worse mistakes more than the smaller ones
   - best when predicting continuous values
 - Loss Functions
 <img width="747" height="243" alt="image" src="https://github.com/user-attachments/assets/5e624902-9fdd-4574-870b-57a0d3925787" />
 
-    
-
+### Optimizers and Gradients
+- Gradient: how much does each weight contribute to the loss
+  - Uses the derivative of the loss function to determine the descent direction
+  - also uses the size of the derivative to determine the change size
+  - The change size is then scaled with the learning rate to prevent overshooting
+- Adam: a faster, more reliable optimizer that knows which weights need big adjustments and which ones need fine-tuning
+  - Adam does have a smaller learning rate than Gradient descent
   
+### Image Classification - Part 1: Preparing the Data and Building the Model
+- torchvision: PyTorch's computer vision library that comes preinstalled with popular datasets
+- Q: What is the MNIST data? How would it have a decimal mean and standard deviation?
+- A: (AI) By converting these values to a scale from 0 to 1 (by dividing by 255). Then, we calculate the average brightness (mean) and how much the brightness varies (standard deviation) across all training images.
+  -  transform.normalize() does this to every image pixel to get those numbers
+- Q: Why batch size 64
+- A: (AI) 64 is a common choice that works well for many problems
+- Q: How would I know how many layers and neurons I want?
+- A: (AI) Hidden layers with several neurons chosen based on experimentation, balancing between too few (underfitting) and too many (overfitting or slow training).
+<img width="373" height="310" alt="image" src="https://github.com/user-attachments/assets/9060f33c-4dd8-4ca2-a2ae-27182f7c4709" />
+
+- self.flatten flattens the images and transforms the 2D images into a 1D sample of pixel points
+  
+
