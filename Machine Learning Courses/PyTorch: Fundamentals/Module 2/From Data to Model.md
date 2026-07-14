@@ -72,3 +72,6 @@
 - Think of the outputs of the loss function as a measurement of the difference between the prediction outputs and the real values
 - And the backward function is the thing that determines the best change for each of the weights that will minimize the loss
 
+## Notes
+KL divergence measures how one probability distribution compares to a reference probability distribution
+
