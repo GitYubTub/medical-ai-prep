@@ -67,5 +67,8 @@
 <img width="373" height="310" alt="image" src="https://github.com/user-attachments/assets/9060f33c-4dd8-4ca2-a2ae-27182f7c4709" />
 
 - self.flatten flattens the images and transforms the 2D images into a 1D sample of pixel points
-  
+
+## (3Blue1Brown) Backpropagation, intuitively | Deep Learning Chapter 3
+- Think of the outputs of the loss function as a measurement of the difference between the prediction outputs and the real values
+- And the backward function is the thing that determines the best change for each of the weights that will minimize the loss
 
