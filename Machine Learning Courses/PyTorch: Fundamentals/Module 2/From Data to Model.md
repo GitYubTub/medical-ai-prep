@@ -66,11 +66,14 @@
 - A: (AI) Hidden layers with several neurons chosen based on experimentation, balancing between too few (underfitting) and too many (overfitting or slow training).
 <img width="373" height="310" alt="image" src="https://github.com/user-attachments/assets/9060f33c-4dd8-4ca2-a2ae-27182f7c4709" />
 
+- self.flatten flattens the images and transforms the 2D images into a 1D sample of pixel points
+  
 <img width="853" height="902" alt="image" src="https://github.com/user-attachments/assets/49b47ab3-fd0e-4cb2-870c-378c0b4e0b77" />
 <img width="854" height="879" alt="image" src="https://github.com/user-attachments/assets/b0336e24-3447-4c9c-bd3c-66e9188ef680" />
 
+A simple way to figure it out the mean and std of an image dataset for its pixels
+<img width="504" height="434" alt="image" src="https://github.com/user-attachments/assets/3cb17569-80a9-4ee3-9c62-10b08c9b62a2" />
 
-- self.flatten flattens the images and transforms the 2D images into a 1D sample of pixel points
 
 ## (3Blue1Brown) Backpropagation, intuitively | Deep Learning Chapter 3
 - Think of the outputs of the loss function as a measurement of the difference between the prediction outputs and the real values
