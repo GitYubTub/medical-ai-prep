@@ -66,6 +66,10 @@
 - A: (AI) Hidden layers with several neurons chosen based on experimentation, balancing between too few (underfitting) and too many (overfitting or slow training).
 <img width="373" height="310" alt="image" src="https://github.com/user-attachments/assets/9060f33c-4dd8-4ca2-a2ae-27182f7c4709" />
 
+<img width="853" height="902" alt="image" src="https://github.com/user-attachments/assets/49b47ab3-fd0e-4cb2-870c-378c0b4e0b77" />
+<img width="854" height="879" alt="image" src="https://github.com/user-attachments/assets/b0336e24-3447-4c9c-bd3c-66e9188ef680" />
+
+
 - self.flatten flattens the images and transforms the 2D images into a 1D sample of pixel points
 
 ## (3Blue1Brown) Backpropagation, intuitively | Deep Learning Chapter 3
