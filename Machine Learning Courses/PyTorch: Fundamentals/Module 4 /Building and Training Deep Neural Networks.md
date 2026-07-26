@@ -21,3 +21,17 @@
   - stride: how far each filter moves with each step (in pixels)
   - padding: for egdes and corners where a 3 by 3 cannot fit, the padding adds an imagenary edge around the edge set to zero by default 
 
+### CNNs - Part 2: The Full Architecture
+<img width="857" height="396" alt="image" src="https://github.com/user-attachments/assets/38eae4c3-baca-4339-b524-93aab51633fd" />
+
+- The full model starts with two convulutional layers and ends in a fully connected layer (fully connected: every neuron in the input is connected to every neuron in the output
+- start with a convolutional layer of one channel (grayscale), learn 32 different filters, with the size of the filter being 3 by 3 and a padding of 1
+  - output: 32 distinct looking images that are the same images with different filters other know as feature maps or activation maps
+- ReLU sets any negative value in the feature map to zero
+  - helps learn more complexed image patterns
+- Maxpool2d: pooling is a common tehnique used in CNNs to reduce the size of feature maps
+  - takes the kernal size and divids the feature grid into equal sized kernel sized grids. In those grids the high value is taken and formed into a kernel size
+  - this helps reduce data size and lets the model run faster and more smoothly
+<img width="501" height="414" alt="image" src="https://github.com/user-attachments/assets/4e4d56df-7087-40ad-819e-a5fd70183267" />
+
+ 
