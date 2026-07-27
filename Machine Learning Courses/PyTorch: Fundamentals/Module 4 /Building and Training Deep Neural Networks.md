@@ -43,5 +43,16 @@
 - the final layer being the fully connected layer makes an prediction
 
 ### Train a CNN for Image Classification
+<img width="747" height="419" alt="image" src="https://github.com/user-attachments/assets/a3bb0585-91c3-41a5-9735-67bebab4e59b" />
 
+- self.dropout: deactivates about 50% of the neurons during training
+  - stops co-adaptation: neurons learn to rely on shortcuts
+  - by radnomly removing neurons during channels it stops other neurons from relying to much on a single pathway
+  - usually ranges from 0.2 to 0.5
+  - dataset problem if shortcuts can be reliably used to make predictions
+<img width="786" height="143" alt="image" src="https://github.com/user-attachments/assets/a001889d-c2a3-43f1-b24b-12829489a266" />
+
+- weight_decay: in optimizer and it a regularization technique used to help with generalization; discourages the network from using very large weights
+  - help reduce overfitting
+  - very large weights tell the model that the specific examples in the training dataset are very important to the final prediction, leading to overfixation on those points
  
