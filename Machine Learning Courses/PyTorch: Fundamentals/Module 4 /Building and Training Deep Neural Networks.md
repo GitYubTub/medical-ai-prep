@@ -38,6 +38,10 @@
 - Fully connected layer: in this case is (64 * 7 * 7, 10) because it's 64 outputs in the previous layer with a maxpool layer of 7x7; 10 is because the final output is 10 (I think)
 <img width="501" height="414" alt="image" src="https://github.com/user-attachments/assets/4e4d56df-7087-40ad-819e-a5fd70183267" />
 
+- pass data through each of the convolutional layers
+- flattens the layer before passing the data throught the final layer
+- the final layer being the fully connected layer makes an prediction
 
+### Train a CNN for Image Classification
 
  
