@@ -30,8 +30,14 @@
 - ReLU sets any negative value in the feature map to zero
   - helps learn more complexed image patterns
 - Maxpool2d: pooling is a common tehnique used in CNNs to reduce the size of feature maps
-  - takes the kernal size and divids the feature grid into equal sized kernel sized grids. In those grids the high value is taken and formed into a kernel size
+  - takes the kernal size and divids the feature grid into equal sized kernel sized grids. In those grids the highest value is taken and formed into a kernel sized grid
   - this helps reduce data size and lets the model run faster and more smoothly
+- __init__: if a class is a blueprint, then the __init__ fuction is where you assign specific details to objects you build
+  - self: is always the first parameter of __init__. allows python to assign values to that object. Creates a permanet value attached to that object
+  - Ex: self.name = name; name = name wouldn't work as the latter creates a local variable
+- Fully connected layer: in this case is (64 * 7 * 7, 10) because it's 64 outputs in the previous layer with a maxpool layer of 7x7; 10 is because the final output is 10 (I think)
 <img width="501" height="414" alt="image" src="https://github.com/user-attachments/assets/4e4d56df-7087-40ad-819e-a5fd70183267" />
+
+
 
  
