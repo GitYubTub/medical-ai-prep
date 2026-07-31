@@ -19,4 +19,8 @@ https://www.youtube.com/watch?v=aircAruvnKk
   - a high input with a high positive weight connecting the input to that neuron will cause the values for that neuron to be higher
     - this can affect the activations of the neurons in the next layer, with negative weights pushing away from a neuron  
   - ReLU is a great classification activation function because it shuts off neural pathways that have low(negative) values.
-  - 
+  - When making classification networks, loss = nn.CrossEntropyLoss has softmax built in, converting the output into values between 0 and 1
+  - The bias tells the network how high of a value the sum of each weighted neuron has to be before it can get meaningfully active
+  - The entire neural network between layers can be seen as a matrix multiplication with matrix addition
+  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d01ca697-19a3-47dc-9946-ee50de6a2671" />
+
