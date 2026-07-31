@@ -1,58 +1,60 @@
 ## Building and Training Deep Neural Networks.md
 
 ### CNNs - Part 1: Filters, Patterns, and Feature Maps
-- Convolutional Filters: ustalizes the grayscale value of each pixel and its immediate neighbors (3x3 grid) to multiply with a grid of filter values also 3 by 3 that are all added together with a bias: creating a new grayscale value for that pixel
+- Convolutional Filters: utilize the grayscale value of each pixel and its immediate neighbors (3x3 grid) to multiply with a grid of filter values, also 3 by 3, that are all added together with a bias: creating a new grayscale value for that pixel
   - sliding that filter over an image is called Convolution
-  - by doing this, you highight different features of the image
+  - by doing this, you highlight different features of the image
   - Ex: <img width="219" height="208" alt="image" src="https://github.com/user-attachments/assets/66842f51-095d-4f9c-82aa-03d3c2777bfe" />
  <img width="140" height="133" alt="image" src="https://github.com/user-attachments/assets/db835eba-d8e5-4e13-9cce-f86d095ac6fc" /> <img width="219" height="208" alt="image" src="https://github.com/user-attachments/assets/44320d0e-fc8f-4f70-8630-13c29dbccb05" />
 
-    By using the filter with the grid values of those numbers, if the left and right of the pixel differ greatly, then the output with the filter will show great contrast. While if the grayscale value of the pixel's left and right are similar, then with the filter, the sum will be close to one as the left and right will cancel out, making the output darker
+    By using the filter with the grid values of those numbers, if the left and right sides of the pixel differ greatly, the output of the filter will show high contrast. While if the grayscale values of the pixel's left and right are similar, then with the filter, the sum will be close to one as the left and right will cancel out, making the output darker
 
   - using these filters can help us reveal patterns that differentiate one image from another
 - Convolutional Neural networks and find which filters will work the best and tune them to find specific patterns
 - Create CNNs in PyTorch
 <img width="746" height="157" alt="image" src="https://github.com/user-attachments/assets/824f49e8-786b-4de5-b82f-c37591fd871b" />
 
-  - nn.Conv2d is used to define the CNN which represent that its a 2d filter for a 2d image
-  - in_channels: number of color channels in each image (rbg has 3)
+  - nn.Conv2d is used to define the CNN, which represents thatit'ss a 2d filter for a 2d image
+  - in_channels: number of color channels in each image (RGB has 3)
   - out_channels: how many filters the CNN uses, with each filter defining a feature; use multiple filters to capture multiple features in the image
-  - kernel_size: the size of each filter (3 by 3 is common because it includes he picel and its nearest neighbors)
+  - kernel_size: the size of each filter (3 by 3 is common because it includes the pixel and its nearest neighbors)
   - stride: how far each filter moves with each step (in pixels)
-  - padding: for egdes and corners where a 3 by 3 cannot fit, the padding adds an imagenary edge around the edge set to zero by default 
+  - padding: for edges and corners where a 3 by 3 cannot fit; the padding adds an imaginary edge around the edge, set to zero by default 
 
 ### CNNs - Part 2: The Full Architecture
 <img width="857" height="396" alt="image" src="https://github.com/user-attachments/assets/38eae4c3-baca-4339-b524-93aab51633fd" />
 
-- The full model starts with two convulutional layers and ends in a fully connected layer (fully connected: every neuron in the input is connected to every neuron in the output
+- The full model starts with two convolutional layers and ends in a fully connected layer (fully connected: every neuron in the input is connected to every neuron in the output
 - start with a convolutional layer of one channel (grayscale), learn 32 different filters, with the size of the filter being 3 by 3 and a padding of 1
-  - output: 32 distinct looking images that are the same images with different filters other know as feature maps or activation maps
+  - output: 32 distinct-looking images that are the same images with different filters, other know as feature maps or activation maps
 - ReLU sets any negative value in the feature map to zero
-  - helps learn more complexed image patterns
-- Maxpool2d: pooling is a common tehnique used in CNNs to reduce the size of feature maps
-  - takes the kernal size and divids the feature grid into equal sized kernel sized grids. In those grids the highest value is taken and formed into a kernel sized grid
+  - helps learn more complex image patterns
+- Maxpool2d: pooling is a common technique used in CNNs to reduce the size of feature maps
+  - takes the kernel size and divides the feature grid into equal-sized kernel-sized grids. In those grids, the highest value is taken and formed into akernel-sizedd grid
   - this helps reduce data size and lets the model run faster and more smoothly
 - __init__: if a class is a blueprint, then the __init__ fuction is where you assign specific details to objects you build
-  - self: is always the first parameter of __init__. allows python to assign values to that object. Creates a permanet value attached to that object
-  - Ex: self.name = name; name = name wouldn't work as the latter creates a local variable
+  - self: is always the first parameter of __init__. Allows Python to assign values to that object. Creates a permanent value attached to that object
+  - Ex: self .name = name; name = name wouldn't work as the latter creates a local variable
 - Fully connected layer: in this case is (64 * 7 * 7, 10) because it's 64 outputs in the previous layer with a maxpool layer of 7x7; 10 is because the final output is 10 (I think)
 <img width="501" height="414" alt="image" src="https://github.com/user-attachments/assets/4e4d56df-7087-40ad-819e-a5fd70183267" />
 
 - pass data through each of the convolutional layers
-- flattens the layer before passing the data throught the final layer
-- the final layer being the fully connected layer makes an prediction
+- flattens the layer before passing the data through the final layer
+- the final layer, being the fully connected layer, makes a prediction
 
 ### Train a CNN for Image Classification
 <img width="747" height="419" alt="image" src="https://github.com/user-attachments/assets/a3bb0585-91c3-41a5-9735-67bebab4e59b" />
 
 - self.dropout: deactivates about 50% of the neurons during training
   - stops co-adaptation: neurons learn to rely on shortcuts
-  - by radnomly removing neurons during channels it stops other neurons from relying to much on a single pathway
+  - by randomly removing neurons during channels, it stops other neurons from relying too much on a single pathway
   - usually ranges from 0.2 to 0.5
   - dataset problem if shortcuts can be reliably used to make predictions
 <img width="786" height="143" alt="image" src="https://github.com/user-attachments/assets/a001889d-c2a3-43f1-b24b-12829489a266" />
 
-- weight_decay: in optimizer and it a regularization technique used to help with generalization; discourages the network from using very large weights
-  - help reduce overfitting
-  - very large weights tell the model that the specific examples in the training dataset are very important to the final prediction, leading to overfixation on those points
+- weight_decay: in the  optimizer, it is a regularization technique used to help with generalization; discourages the network from using very large weights
+  helps reduce overfitting
+  - very large weights tell the model that the specific examples in the training dataset are very important to the final prediction, leading to overfitting on those points
+ 
+# On the next build of your neural network, check if the first epoch of the training set has high accuracy already
  
